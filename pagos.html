@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Métodos de Pago Digital</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+
+      background-color: #f4f6f8;
+      color: #333;
+    }
+
+    header {
+      background-color: #1e1e2f;
+      color: white;
+      padding: 20px;
+      text-align: center;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+    }
+
+    h1 {
+      margin: 0;
+      font-size: 2rem;
+    }
+
+    .container {
+      max-width: 1000px;
+      margin: 40px auto;
+      padding: 20px;
+    }
+
+    .payment-methods {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+
+    .card {
+      background-color: white;
+      border-radius: 12px;
+      box-shadow: 0 2px 12px rgba(0, 0, 0, 0.1);
+      padding: 20px;
+      text-align: center;
+      transition: transform 0.3s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+    }
+
+    .card img {
+      height: 50px;
+      margin-bottom: 15px;
+    }
+
+    .card h3 {
+      margin: 10px 0;
+    }
+
+    .card button {
+      background-color: #1e1e2f;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 8px;
+      cursor: pointer;
+      font-size: 0.95rem;
+      transition: background-color 0.3s;
+    }
+
+    .card button:hover {
+      background-color: #343456;
+    }
+
+       footer {
+          position: fixed;
+          bottom: 0;
+          left: 0;
+         width: 100%;
+         height: 60px;
+            background-color: #f0f0f0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            box-shadow: 0 -2px 5px rgba(0,0,0,0.1);
+            font-weight: bold;
+           }
+
+    @media (max-width: 600px) {
+      h1 {
+        font-size: 1.5rem;
+      }
+
+      .card button {
+        width: 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Métodos de Pago Digitales</h1>
+    <p>Selecciona tu forma de pago preferida</p>
+  </header>
+
+  <div class="container">
+    <div class="payment-methods">
+
+      <div class="card">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/b/b5/PayPal.svg" alt="PayPal">
+        <h3>PayPal</h3>
+        <p>Rápido y seguro con tu cuenta PayPal.</p>
+         <a href="https://www.paypal.com/es/home?Z3JncnB0=">
+  <button>Usar Paypal</button>
+</a>
+      </div>
+
+      <div class="card">
+        <img src="stripe.jpg">
+        <h3>Stripe</h3>
+        <p>Acepta tarjetas de crédito de forma profesional.</p>
+         <a href="https://dashboard.stripe.com/register">
+  <button>Usar Stripe</button>
+</a>
+      </div>
+
+      <div class="card">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/f/fa/Apple_logo_black.svg" alt="Apple Pay">
+        <h3>Apple Pay</h3>
+        <p>Paga directamente desde tu dispositivo Apple.</p>
+         <a href="https://www.apple.com/apple-pay/">
+  <button>Usar Apple Pay</button>
+</a>
+      </div>
+
+      <div class="card">
+        <img src="g pay.jpg">
+        <h3>Google Pay</h3>
+        <p>Fácil y rápido con tu cuenta de Google.</p>
+        <a href="https://pay.google.com/about/">
+  <button>Usar Google Pay</button>
+</a>
+      </div>
+
+    </div>
+  </div>
+
+  <footer>
+    © 2025 4limbs - 4limbs25@gmail.com
+  </footer>
+
+</body>
+</html>
